@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Letterboxd Search",
+  "version": "1.0",
+  "description": "Search for movies on Letterboxd with a right click!",
+  "permissions": [
+	"contextMenus",
+	"storage"
+  ],
+  "options_page": "options.html",
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/letterboxd-icon-16.png",
+      "48": "images/letterboxd-icon-48.png",
+      "128": "images/letterboxd-icon-128.png"
+    }
+  },
+  "icons": {
+    "16": "images/letterboxd-icon-16.png",
+    "48": "images/letterboxd-icon-48.png",
+    "128": "images/letterboxd-icon-128.png"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}
